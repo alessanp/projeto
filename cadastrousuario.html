@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMINISTRAÇÃO-Cadastro-usuario</title>
+    
+</head>
+<body>
+    <header>
+            <div>
+                <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="cadastroproduto.html">Cadastro-Produto</a>
+                </li>
+                <li>
+                    <a href="cadastrousuario.html">Cadastro-usuario</a>
+
+                </li>
+                <li>
+                    <a href="loginusuario.html">Admin-Login-usuario</a>
+                </li>
+                 </ul>
+            </div>
+    </header>
+        <!-- https://dontpad.com/iw -->
+        <!-- VIA GET - VIA GET ENVIA OS DADOS PELA URL -->
+        <!-- VIA POST - VIA POST ENVIA OS DADOS ESCONDIDO -->
+        <form action="http://google.com.br" method="POST">
+            <label>Nome</label> 
+            <br />
+            <input type="text" name="nome" placeholder="Nome/Login" />
+            <br />
+            <label>Senha</label>
+            <br />
+            <input type="password" name="minha_senha" placeholder="senha"/>
+            <br />
+            <label>CPF</label>
+            <br />
+            <input type="cpf" name="cpf" placeholder="cpf"/>
+            <br />
+            <label>E-mail</label>
+            <br />
+            <input type="email" name="email" placeholder="usuario@teste.com"/>
+            <br />
+            <label>Telefone</label>
+            <br />
+            <input type="tel" name="telefone" placeholder="telefone"/>
+            <br />              
+            <br />
+        <select name="estado_civil">
+            <option value="solteiro(a)">Solteiro(a)</option>
+            <option value="casado(a)">Casado(a)</option>
+            <option value="divorciado(a)">Divorciado(a)</option>
+            <option value="viuvo(a)">Viúvo(a)</option>
+        </select><br />
+        <br />
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+            <br />  <br /><br />
+        </form>
+            <label>Tipo de usuario:</label>
+            <br /><br />        
+        <form>
+            <input type="radio" id="administrador" name="fav_language" value="HTML">
+            <label for="administrador">administrador</label><br>
+
+            <input type="radio" id="padrao" name="fav_language" value="CSS">
+            <label for="padrao">padrao</label><br>
+          </form><br /><br />
+        
+          <table border="1">
+            <tr>
+                <td>Cod</td>
+                <td>Nome</td>
+                <td>Tel.</td>
+            </tr> 
+            <tr>
+                <td>01</td>
+                <td>Ana</td>
+                <td>85 99998.4545</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>José</td>
+                <td>85 99985.8545</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 200px">
+                    Total de Registros
+                </td>
+                <td align="right">2</td>
+            </tr>
+<footer>
+    <div class="card-footer">Footer</div>
+    <a href="autor.html">
+        Desenvolvido por: A.Pereira
+    </a>
+</footer>
+</body>
+</html>
