@@ -5,7 +5,7 @@
     padding: 0;
 }
 body{
-    background-image: url('../images/slideshow.PNG');
+    background-image: url('../images/backgound.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: coral;
@@ -18,7 +18,7 @@ body{
 }
 header{
     width: 80%;
-  /*  background-color: gray;
+    background-color: yellow;
     /*height: 80px;*/
     margin: 0 auto;
     padding: 10px;
@@ -56,11 +56,14 @@ header{
 }
 
 #menu nav ul li a{
-    color: red;
+    color: white;
     text-decoration: none;
     padding: 10px;
     transition: background 250ms;
     border-radius: 0px 10px 0px 10px;
+}
+#menu nav ul li a:hover{
+    background-color: #70742c;
 }
 
 /*conteudo*/
@@ -68,6 +71,41 @@ main{
     display: flex;
     width: 80%;
     margin: 100px auto;   
-    color: white; 
+    color:red; 
+    }
+.coluna{
+    width:50%;
+   /* background-color: red;*/
+}
+main .coluna h1 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 5em;
+}
+main .coluna img{
+    height: 320px;
+    float: right;
+    border-bottom: 15px solid #70742c;
+}
+.btn{
+    padding: 10px 8px;
+    width: 50px;
+    color: blue;
+    background: red;
+    border: 1px solid yellow;
+    border-radius:10px ;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background: aquamarine;
+    transition: background 1s;
+}
 
+footer{
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
