@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../images/backgound.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--cor8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 80%;
+    background-color:var(--cor2);
+    height: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    background-color:var(--cor9) ;
+    padding: 0px 20px 20px 30px;
+    width: 250px;
+    height: 250px;
+}
+ul{
+    list-style: none;
+}
+a{
+    display: block;
+    padding: 20px 5px;
+    color:(--cor1);
+    text-decoration: none;
+}
+li:hover,
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: (--cor8);
+    
+}
+button{
+    background-color: transparent;
+    border: none;
+    color:(--cor1);
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+button:focus~ul{
+    height: 260px;
+}
+@media (max-width:700px){
+    nav,ul {
+        flex-direction: column;
+    }
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    nav{
+        padding: 0;
+        align-items: flex-start;
+    }
+    button{
+        display: flex;
+    }
+    ul{
+        width: 100%;
+    }
+}
+
+/*conteudo*/
+main{
+    display: flex;
+    width: 80%;
+    margin: 100px auto;   
+    color:var(--cor3);
+    }
+.coluna{
+    width:50%;
+   /* background-color: red;*/
+}
+main .coluna h1 {
+    color:var(--cor1);
+    font-family: 'Pacifico', cursive;
+    fonst-size: 5em;
+}
+
+:root{
+    --cor1:white;
+    --cor2:yellow;
+    --cor3:red;
+   /* --cor4:blue;*/
+    --cor5:aquamarine;
+    --cor6:#70742c;
+    --cor7:green;
+    --cor8:coral;
+    --cor9:rgba(0,0,0,0.6);
+}
+
+main .coluna img{
+    height: 320px;
+    float: right;
+    border-bottom: 15px solid var(--cor6);
+}
+
+footer{
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

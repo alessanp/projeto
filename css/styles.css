@@ -8,17 +8,17 @@ body{
     background-image: url('../images/backgound.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: coral;
+    background-color: var(--cor8);
     font-family: Arial, Helvetica, sans-serif;
 }
 #page{
-    background:rgba(0,0,0,0.6);
+    background:var(--cor9);
     width: 100%;
     height: 100vh;
 }
 header{
     width: 80%;
-    background-color: yellow;
+    background-color:var(--cor2);
     /*height: 80px;*/
     margin: 0 auto;
     padding: 10px;
@@ -48,58 +48,82 @@ header{
 }
 
 #menu nav ul li i{
-    color: white;
+    color:var(--cor1);;
 }
 
 #menu nav ul li i:hover{
-    background-color:royalblue; 
+    background-color:var(--cor7); 
 }
 
 #menu nav ul li a{
-    color: white;
+    color: var(--cor3);
     text-decoration: none;
     padding: 10px;
     transition: background 250ms;
     border-radius: 0px 10px 0px 10px;
 }
 #menu nav ul li a:hover{
-    background-color: #70742c;
+    background-color:var(--cor6);
 }
+
+#produto{
+    background-color:var(--cor6); 
+    color:var(--cor1);
+}
+
 
 /*conteudo*/
 main{
     display: flex;
     width: 80%;
     margin: 100px auto;   
-    color:red; 
+    color:var(--cor3);
     }
 .coluna{
     width:50%;
    /* background-color: red;*/
 }
 main .coluna h1 {
-    color: white;
+    color:var(--cor1);
     font-family: 'Pacifico', cursive;
     font-size: 5em;
 }
+
+:root{
+    --cor1:white;
+    --cor2:yellow;
+    --cor3:red;
+    --cor4:blue;
+    --cor5:aquamarine;
+    --cor6:#70742c;
+    --cor7:royalblue;
+    --cor8:coral;
+    --cor9:rgba(0,0,0,0.6);
+}
+
+p{
+    color: var(--cor4);
+
+}
+
 main .coluna img{
     height: 320px;
     float: right;
-    border-bottom: 15px solid #70742c;
+    border-bottom: 15px solid var(--cor6);
 }
 .btn{
     padding: 10px 8px;
     width: 50px;
-    color: blue;
-    background: red;
-    border: 1px solid yellow;
+    color: var(--cor4);
+    background: var(--cor3);
+    border: 1px solid var(--cor2);
     border-radius:10px ;
     text-align: center;
     user-select: none;
     cursor: pointer;
 }
 .btn:hover{
-    background: aquamarine;
+    background: var(--cor5);
     transition: background 1s;
 }
 
